@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Juego</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="contenedor-principal">
+        <p><strong>ADIVINA EL NÚMERO</strong></p>
+        <label for="limiteI">Ingresa límite inferior</label>
+        <input type="number" id="limiteI" value="1">
+        <label for="limiteS">Ingresa límite superior</label>
+        <input type="number" id="limiteS" value="100">
+        <label for="intentos">Ingresa número de intentos</label>
+        <input type="number" id="intentos" value="10">
+        <div>
+            <button onclick="iniciarJuego()" class="btn_jugar">Jugar</button>
+            <button onclick="mostrarScore()">Score</button>
+        </div>
+        <div id="zona-juego">
+            <p id="rango-display"></p>
+            <p id="intentos-display"></p>
+            <label for="inputNumero">Tu número:</label>
+            <input type="number" id="inputNumero">
+            <div>
+                <button onclick="intentarAdivinar()" class="btn_jugar">Adivinar</button>
+                <button onclick="rendirse()">Rendirse</button>
+            </div>
+            <p id="mensaje"></p>
+            <p style="font-size:0.85em; color:#555; margin:0;">Intentos ingresados:</p>
+            <div id="historial"></div>
+        </div>
+        <div id="score-display"></div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+body {
+    background-color: #374059;
+    color: #080808;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.contenedor-principal {
+    background-color: #ffffff;
+    display: grid;
+    place-items: center;
+    width: fit-content;
+    padding: 2rem 10%;
+    border-radius: 8px;
+    gap: 0.6rem;
+}
+
+input {
+    padding: 4px 8px;
+    margin: 2px 0;
+}
+
+button {
+    padding: 6px 16px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.btn_jugar {
+    background-color: #f80000;
+    color: #ffffff;
+}
+
+#mensaje {
+    font-weight: bold;
+    min-height: 1.5em;
+    text-align: center;
+}
+
+#intentos-display {
+    font-size: 0.95em;
+    color: #374059;
+}
+
+#zona-juego {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    border-top: 1px solid #ddd;
+    padding-top: 0.8rem;
+}
+
+#score-display {
+    display: none;
+    text-align: center;
+    line-height: 1.8;
+    border-top: 1px solid #ddd;
+    padding-top: 0.8rem;
+    width: 100%;
+}
+
+#historial {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    max-width: 280px;
+    min-height: 1.5em;
+}
+
+.intento-chip {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: bold;
+    border: 1px solid #ccc;
+}
+
+.intento-mayor {
+    background-color: #fff3cd;
+    border-color: #f0a500;
+    color: #7a5200;
+}
+
+.intento-menor {
+    background-color: #d0e8ff;
+    border-color: #2980b9;
+    color: #1a4f72;
+}
+
+.intento-ganador {
+    background-color: #d4edda;
+    border-color: #28a745;
+    color: #155724;
+}

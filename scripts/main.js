@@ -35,7 +35,6 @@ function setUp(limiteI, limiteS, intentos) {
 function rendirse() {
     if (!juegoTerminado) {
         juegoTerminado = true;
-        partidasTotales++;
         document.getElementById("mensaje").innerHTML =
             `Te rendiste. El número secreto era <strong>${numeroSecreto}</strong>.`;
         document.getElementById("intentos-display").textContent = "";
